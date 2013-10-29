@@ -5,6 +5,3 @@ window.BackboneTestingExample = {
   Routers: {}
 };
 
-$(document).ready(function(){
-  BackboneTestingExample.initialize();
-});

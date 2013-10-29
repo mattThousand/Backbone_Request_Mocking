@@ -14,6 +14,7 @@ group :assets do
   gem 'backbone-on-rails'
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
+  gem 'pry'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
@@ -25,6 +26,7 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'capybara'
   gem 'jasmine'
+  gem 'shoulda-matchers'
 end
 
 gem 'jquery-rails'
