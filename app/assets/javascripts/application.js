@@ -15,6 +15,7 @@
 //= require underscore
 //= require backbone
 //= require ./vendor/handlebars.js
+//= require ./vendor/sinon-1.7.3.js
 //= require backbone_testing_example
 //= require_tree ./models
 //= require_tree ./collections
