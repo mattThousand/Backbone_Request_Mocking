@@ -1,24 +1,32 @@
-BackboneTestingExample.Armadillos.IndexView = Backbone.view.extend({
+BackboneTestingExample.Armadillos.IndexView = Backbone.View.extend({
 
-  events: {
-    'click #myId': 'myFunc'
-  },
 
   initialize: function(options) {
     _.bindAll(this,
-              'myFunc');
+              'myTemplate',
+              'render');
 
-    this.collection = new BackboneTestingExample;
+    this.collection = new BackboneTestingExample.Armadillos;
     this.collection.fetch();
+
+    this.dom = $(this.el);
+    this.setupTemplate();
   },
 
-  // templates
-
-  Handlebars.compile(decodeURI("#myOtherId"));
-
   // functions
-    
-  myFunc: function(e) {
-          // stuff
+
+  myTemplate: function(){
+    return Handlebars.compile(decodeURI($("#my_template").html()));
+  },
+
+  render: function() {
+    $(this.el).append(this.myTemplate());
+  },
+
+  setupTemplate: function() {
+    this.dom.append(
+      $(this.myTemplate()({models: this.collection.mos}))
+    );
   }
-}):
+
+});

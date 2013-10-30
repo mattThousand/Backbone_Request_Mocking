@@ -1,1 +1,14 @@
-<h1>yo</h1>
+<div class="my-class">
+  <script id="my_template" type="text/x-handlebars-template">
+    <h1>Awesome page title</h1>
+    <p>{{models}}</p>
+  </script>
+
+  <script type="text/javascript">
+    $(function(){
+      new BackboneTestingExample.Armadillos.IndexView({
+        el: '.my-class'
+      });
+    });
+  </script>
+</div>
