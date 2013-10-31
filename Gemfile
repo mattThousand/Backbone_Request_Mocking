@@ -25,7 +25,7 @@ end
 group :development, :test do
   gem 'rspec-rails'
   gem 'capybara'
-  gem 'jasmine'
+  gem 'jasmine-rails'
   gem 'shoulda-matchers'
 end
 
