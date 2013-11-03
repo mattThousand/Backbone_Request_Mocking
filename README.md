@@ -1,4 +1,4 @@
 Backbone_Request_Mocking
 ========================
 Example code for a blog post on mocking server responses in the context of a
-Backbone.js application (www.matt-buckley.com/entries/2)
+Backbone.js application (www.matt-buckley.com/entries/2).
